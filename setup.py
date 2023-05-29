@@ -204,9 +204,9 @@ def checkBuildEnvironment(checkCython, checkPython):
             sys.exit()
     if checkPython:
         v = sys.version_info
-        if v.major != 3 or v.minor != 9:
+        if v.major != 3 or v.minor != 10:
             print(textwrap.dedent('''\
-            Blender 2.93 officially uses Python 3.9.x.
+            Blender 2.93 officially uses Python 3.10.x.
             You are using: {}
 
             Use the --noversioncheck option to disable this check.\
